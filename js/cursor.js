@@ -2,8 +2,7 @@ let cursorAnimationFrame = 0;
 let cursorAnimInterval;
 
 function setNormalCursor() {
-    gameArea.style.cursor = "url('/images/slipper-cursor.png') 50 50, auto";
-    gameArea.style.transform = 'none';
+    gameArea.style.cursor = "url('/images/slipper-cursor.png') 50 50, pointer !important";
 }
 
 function setSlapCursor() {
@@ -46,5 +45,15 @@ function setSlapCursor() {
 // Event listeners
 gameArea.addEventListener('mousedown', setSlapCursor);
 gameArea.addEventListener('mouseup', setNormalCursor);
+
+// Add error handling for cursor image loading
+window.addEventListener('load', () => {
+    const cursorImg = new Image();
+    cursorImg.onerror = () => {
+        console.error('Cursor image failed to load - check path');
+        document.body.style.cursor = 'pointer'; // Fallback
+    };
+    cursorImg.src = '/images/slipper-cursor.png';
+});
 
 
