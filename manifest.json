@@ -1,0 +1,24 @@
+{
+  "name": "Kill the Cockroaches",
+  "short_name": "KillRoaches",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#8B4513",
+  "theme_color": "#A0522D",
+  "description": "Kill as many cockroaches as you can in 90 seconds!",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "images/icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
