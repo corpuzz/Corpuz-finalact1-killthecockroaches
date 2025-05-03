@@ -5,14 +5,14 @@
 
 body {
   background: linear-gradient(to bottom, #1a0f0f, #380c0c);
-  cursor: url('/images/slipper-cursor.png') 50 50, auto; /* FIXED: absolute path */
+  cursor: url('../images/slipper-cursor.png') 50 50, auto;
   font-family: 'Press Start 2P', 'Courier New', Courier, monospace;
 }
 
 
 #gameArea {
   background: url('/images/floor-pattern.png') repeat; /* FIXED: absolute path */
-  cursor: url('/images/slipper-cursor.png') 50 50, auto !important;
+  cursor: url('../images/slipper-cursor.png') 50 50, auto !important;
   background-size: cover;
   position: relative;
   width: 100%;
@@ -32,7 +32,7 @@ body {
   background-size: contain;
   position: absolute;
   animation: pop 0.5s ease-in-out;
-  cursor: url('/images/slipper-cursor.png') 50 50, auto !important;
+  cursor: url('../images/slipper-cursor.png') 50 50, auto !important;
 }
 
 .dead-cockroach {
